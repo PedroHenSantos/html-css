@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'LifeCraft';
+    src: url('../fontes/LifeCraft_Font.ttf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #00C0FF;
+    --cor1: #21A7C5;
+    --cor2: #34889B;
+    --cor3: #386670;
+    --cor4: #2E4146;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-wow: "LifeCraft", cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    background-image: linear-gradient(to top, var(--cor2), var(--cor0));
+    padding-top: 40px;
+    text-align: center;
+    min-height: 150px;
+}
+
+header h1 {
+    color: white;
+    font-family: var(--fonte-wow);
+    font-size: 3em;
+    font-weight: normal;
+    text-shadow: 2px px;
+}
+
+header p {
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+nav {
+    text-align: center;
+    background-color: var(--cor3);
+    padding: 10px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.363);
+}
+
+nav > a {
+    color: var(--cor1);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor1);
+    color: var(--cor4);
+    text-decoration: underline;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.466);
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+main h1 {
+    color: var(--cor4);
+    font-family: var(--fonte-wow);
+    font-weight: normal;
+    font-size: 2em;
+}
+
+main h2 {
+    font-family: var(--fonte-wow);
+    color: var(--cor3);
+    font-size: 1.5em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 10px;
+}
+
+main p {
+    margin: 15px 0px;
+    text-indent: 30px;
+    text-align: justify;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+main strong {
+    color: var(--cor3);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor4);
+    background-color: var(--cor1);
+    padding-block-end: 3px 7px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor2);
+}
+
+main > img {
+    width: 100%;
+    margin: auto;
+}
+
+div.video {
+    background-color: var(--cor4);
+    margin: 0px -15px 30px -15px;
+    padding: 20px;
+    padding-bottom: 2%;
+    position: relative;
+    text-align: center;
+}
+
+div.video > inframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.192);
+}
+
+aside > h3 {
+    background-color: var(--cor2);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 12px 12px 0px 0px;
+}
+
+footer {
+    background-color: var(--cor4);
+    text-align: center;
+    color: white;
+}
